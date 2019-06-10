@@ -1,0 +1,20 @@
+{
+    "name": "Clear Site Data",
+    "version": "1.0",
+    "description": "Clear Browsing Data for Current Site",
+		
+	
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	
+	"background":{
+		"scripts": ["background.js"]		
+	},
+	
+	"permissions": [
+          "browsingData",
+          "tabs"		  
+        ],
+    "manifest_version": 2
+  }
