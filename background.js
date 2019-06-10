@@ -37,7 +37,8 @@ chrome.browserAction.onClicked.addListener(function(tab){
 				//"passwords": true,
 				//"serviceWorkers": true,
 				"webSQL": true
-			}
+			},
+			clear_callback
 			
 			
 		);
