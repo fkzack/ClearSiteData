@@ -1,20 +1,17 @@
 {
-    "name": "Clear Site Data",
-    "version": "1.2",
-    "description": "Clear Browsing Data for Current Site",
-		
-	
-	"browser_action": {
-		"default_icon": "icon.png"
-	},
-	
-	"background":{
-		"scripts": ["background.js"]		
-	},
-	
-	"permissions": [
-          "browsingData",
-          "tabs"		  
-        ],
-    "manifest_version": 2
-  }
+  "name": "Clear Site TEST",
+  "version": "2.0",
+  "description": "Clear Browsing Data for Current Site",
+
+  "action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+
+  "permissions": ["browsingData", "tabs", "activeTab"],
+  "manifest_version": 3
+}
